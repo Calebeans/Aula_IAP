@@ -32,5 +32,51 @@ public class Main {
                 "\nMaior Float: " + Float.MAX_VALUE +
                 "\nMenor Double: " + Double.MIN_VALUE +
                 "\nMaior Double: " + Double.MAX_VALUE);
+
+        String nome = "Kalebe";
+
+        switch (nome){
+            case "Calebe":
+                System.out.println("Nome correto!");
+                break;
+            case "calebe":
+                System.out.println("Nome Correto");
+                break;
+            case "Kalebe":
+                System.out.println("Nome incorreto");
+                break;
         }
+
+        for(int i = 1; i <= 10; i++){
+            System.out.println(i + " elefante incomoda muita gente!");
+        }
+
+
+        //Use "Alt + Shift + F10"
+        for(String obj: args){
+            System.out.println(obj);
+        }
+        System.out.println("___");
+        for(int i = 0; i < args.length; i++){
+            String ag = args[i];
+            System.out.println(ag);
+        }
+
+        for(String obj: args){
+            Integer num = new Integer(obj);
+            if(num < 12){
+                System.out.println(num + "Criança");
+            }else if(num < 18){
+                System.out.println(num +"Adolescentes");
+            }else if(num < 30){
+                System.out.println(num +"Jovem");
+            }else if(num < 60){
+                System.out.println(num +"Adulto");
+            }else{
+                System.out.println(num +"Idoso");
+            }
+        }
+
+        }
+
     }
